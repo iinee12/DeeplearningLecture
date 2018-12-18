@@ -31,4 +31,6 @@ for step in range(2001):
         print(step, sess.run(cost, feed_dict={X : x_data, Y : y_data}), sess.run(w), sess.run(b))
 
 
-print("예축 결과----", sess.run(hypothesis, feed_dict={X:5}))
+
+for preX in range(5, 100):
+    print("예축 결과----", sess.run(hypothesis, feed_dict={X: preX}))
